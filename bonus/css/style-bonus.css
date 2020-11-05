@@ -3,6 +3,8 @@
   border: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .inline {
@@ -41,12 +43,15 @@ a {
   right: 10%;
 }
 
+.box-menu ul, li, a {
+  /*font-family: 'Ubuntu', sans-serif;*/
+}
+
 
 .box-menu ul li{
   display: inline-block;
   font-size: 18.5px;
   margin: 0 5px;
-  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
 
@@ -56,15 +61,18 @@ a {
 /* /stili header */
 
 /* stili main */
+main {
+  background: #fff;;
+}
+
 /* stili container catalogo */
 .container-catalogo {
   position: relative;
-  margin:150px auto 20px auto;
+  margin:150px auto 200px auto;
   width: 1000px;
+  padding-bottom: 50px;
 }
 /* /stili container catalogo */
-
-
 
 /* stili box prodotto */
 .box-prodotto {
@@ -80,28 +88,57 @@ a {
 
 .sconto {
   position: absolute;
-  background: green;
-  right: 0;
+  background: #00cca3;
+  left: 43%;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-.cuore {
+.text {
   position: absolute;
   width: 100%;
-  color: red;
-  font-size: 40px;
+  color: #000;
+  font-size: 30px;
   bottom: 0;
   text-align: center;
-  display: none;
+  opacity: 0;
+  text-transform: uppercase;
 }
 
-.box-prodotto:hover .cuore{
-  display: block;
+.box-prodotto:hover .text{
+  opacity: 1;
 }
 
 .box-prodotto:nth-child(2) .sconto{
-  background: red;
+  background: #4747d1;
+}
+/* /stili box prodotto */
+/* \stili main */
+
+/* stili footer */
+.container-footer {
+  width: 100%;
+  background: #333;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: -10000000;
+
+}
+
+.container-footer p:only-child{
+  padding: 50px;
+  color: #fff;
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container-footer span {
+  text-transform: uppercase;
 }
 
 
-/* /stili box prodotto */
-/* \stili main */
+/* stili footer */
