@@ -20,11 +20,13 @@ a {
   width: 100%;
   position: fixed;
   top: 0;
+  box-shadow: 2px 0px 20px 5px #888888;
+  z-index: 10000001;
 
 
 }
 .row-menu {
-  background: #1ad1ff;
+  background: #fff;
   position: relative;
 }
 
@@ -53,15 +55,53 @@ a {
 }
 /* /stili header */
 
-.container-main {
-  height: 100vh;
+/* stili main */
+/* stili container catalogo */
+.container-catalogo {
+  position: relative;
+  margin:150px auto 20px auto;
+  width: 1000px;
+}
+/* /stili container catalogo */
+
+
+
+/* stili box prodotto */
+.box-prodotto {
+  display: inline-block;
+  position: relative;
+  width: 33%
+}
+
+.img-prodotto {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sconto {
+  position: absolute;
+  background: green;
+  right: 0;
+}
+
+.cuore {
+  position: absolute;
+  width: 100%;
+  color: red;
+  font-size: 40px;
+  bottom: 0;
+  text-align: center;
+  display: none;
+}
+
+.box-prodotto:hover .cuore{
+  display: block;
+}
+
+.box-prodotto:nth-child(2) .sconto{
   background: red;
 }
 
-.container-main:last:child {
-  background: blue;
-}
 
-.container-main:nth-child(2) {
-  background: green;
-}
+/* /stili box prodotto */
+/* \stili main */
