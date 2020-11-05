@@ -16,6 +16,13 @@ a {
 /* /stili generali */
 
 /* stili header */
+.container-menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+
+}
 .row-menu {
   background: #1ad1ff;
   position: relative;
@@ -41,17 +48,20 @@ a {
   font-weight: 500;
 }
 
-.box-menu ul li a {
-  background: red;
-  padding:20px;
-}
-
 .box-menu ul li a:hover {
-  font-size: 25px;
   color: #004d80;
 }
-
-
-
-
 /* /stili header */
+
+.container-main {
+  height: 100vh;
+  background: red;
+}
+
+.container-main:last:child {
+  background: blue;
+}
+
+.container-main:nth-child(2) {
+  background: green;
+}
