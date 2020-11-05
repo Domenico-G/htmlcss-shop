@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* stili container catalogo */
+.container-catalogo {
+  position: relative;
+  background: red;
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+}
+/* /stili container catalogo */
+
+/* stili row */
+.row {
+  background: blue;
+  height: 250px;
+  border: 1px solid #333;
+}
+/* /stili row */
