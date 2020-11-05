@@ -7,17 +7,49 @@
 /* stili container catalogo */
 .container-catalogo {
   position: relative;
-  background: red;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 1000px;
   height: 500px;
 }
 /* /stili container catalogo */
 
-/* stili row */
-.row {
-  background: blue;
-  height: 250px;
-  border: 1px solid #333;
+
+
+/* stili box prodotto */
+.box-prodotto {
+  display: inline-block;
+  position: relative;
+  width: 33%
 }
-/* /stili row */
+
+.img-prodotto {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sconto {
+  position: absolute;
+  background: green;
+  right: 0;
+}
+
+.cuore {
+  position: absolute;
+  width: 100%;
+  color: red;
+  font-size: 40px;
+  bottom: 0;
+  text-align: center;
+  display: none;
+}
+
+.box-prodotto:hover .cuore{
+  display: block;
+}
+
+.box-prodotto:nth-child(2) .sconto{
+  background: red;
+}
+
+
+/* /stili box prodotto */
