@@ -3,8 +3,12 @@
   border: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 
+
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
 }
 
 .inline {
@@ -43,7 +47,7 @@ a {
   right: 10%;
 }
 
-.box-menu ul, li, a {
+.box-menu ul li   {
   font-family: 'Ubuntu', sans-serif;
 }
 
